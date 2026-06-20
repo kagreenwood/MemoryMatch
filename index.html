@@ -5,19 +5,19 @@
 <title>Memory Match</title>
 <style>
   :root {
-    --bg: #163d24;
+    --bg: #e6f1fb;
     --card-back: #4a3f8c;
     --card-front: #ffffff;
-    --accent: #ff6f91;
-    --accent2: #6fc3ff;
+    --accent: #d4537e;
+    --accent2: #185fa5;
   }
   * { box-sizing: border-box; }
   body {
     margin: 0;
     min-height: 100vh;
-    background: radial-gradient(circle at top, #1f5c34, var(--bg));
+    background: var(--bg);
     font-family: 'Trebuchet MS', sans-serif;
-    color: #fff;
+    color: #042c53;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -75,7 +75,7 @@
   .front {
     background: var(--card-front);
     transform: rotateY(180deg);
-    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    box-shadow: 0 0 0 1px rgba(4,44,83,0.1);
   }
   .card.matched .front {
     background: #d8ffd8;
@@ -96,17 +96,17 @@
     border: none;
     border-radius: 8px;
     background: var(--accent);
-    color: #1e1b2e;
+    color: #fff;
     font-weight: bold;
     cursor: pointer;
     font-size: 14px;
   }
-  button#restart:hover { background: var(--accent2); }
+  button#restart:hover { background: var(--accent2); color: #fff; }
 </style>
 </head>
 <body>
   <h1>🧠 Memory Match</h1>
-  <div class="subtitle">Find all the pairs in as few moves as possible.</div>
+  <div class="subtitle">Find all the cat pairs in as few moves as possible.</div>
   <div class="stats">
     <div>Moves: <span id="moves">0</span></div>
     <div>Pairs: <span id="pairs">0</span> / 8</div>
@@ -117,7 +117,7 @@
   <button id="restart">Restart</button>
 
 <script>
-const emojis = ['🍕','🚀','🐙','🌵','🎲','🎈','🦄','🍩'];
+const emojis = ['🐱','🐈','🐈‍⬛','🦁','🐯','😺','😻','😼'];
 const board = document.getElementById('board');
 const movesEl = document.getElementById('moves');
 const pairsEl = document.getElementById('pairs');

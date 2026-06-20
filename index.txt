@@ -1,5 +1,5 @@
 🧠 Memory Match
-Find all the pairs in as few moves as possible.
+Find all the cat pairs in as few moves as possible.
 Moves: 0
 Pairs: 0 / 8
 Time: 0s
